@@ -1,0 +1,103 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "5588e54d-1f16-4d43-8f51-778693b37ba6",
+  "location" : "/home/iceberg/warehouse/sample_db/employees",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1769663072486,
+  "last-column-id" : 7,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "employee_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "department",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "salary",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "experience_years",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "hire_date",
+      "required" : false,
+      "type" : "date"
+    }, {
+      "id" : 7,
+      "name" : "experience_level",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 250819531319219595,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 250819531319219595,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 250819531319219595,
+    "timestamp-ms" : 1769663072486,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1769663059116",
+      "added-data-files" : "10",
+      "added-records" : "10",
+      "added-files-size" : "21920",
+      "changed-partition-count" : "1",
+      "total-records" : "10",
+      "total-files-size" : "21920",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1769663059116",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/sample_db/employees/metadata/snap-250819531319219595-1-0165b643-50b0-4e61-ac78-795a115e957a.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1769663072486,
+    "snapshot-id" : 250819531319219595
+  } ],
+  "metadata-log" : [ ]
+}
